@@ -26,7 +26,7 @@ class CreateTablesTable extends Migration
             $table->id('id');
             $table->string('name');
             $table->inaeger('grade');
-            $table->text('mail');
+            $table->string('mail');
             $table->text('password');
             $table->integer('number');
         });
@@ -43,7 +43,7 @@ class CreateTablesTable extends Migration
         
         Schema::create('shops', function (Blueprint $table) {
             $table->id('id');
-            $table->text();
+            $table->string('name');
         });
     }
 
